@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a class="links" href="index.html">Home</a>
+            <a class="links" href="about.html">About</a>
+            <a class="links" href="pancake.html">Pancakes</a>
+            <a class="links" href="coolStuff.html">Cool Stuff</a>
+            
+
+        </div>
+        <div class="right">
+            <a class="current links" href="signup.html">Sign Up</a>
+            <button id="dark-mode-toggle" class="dark-mode-toggle"><img src="sun.png" alt="Sun"></button>
+
+        </div>
+    </nav>
+    <h2>Make an account</h2>
+<input type="text" name="Username" placeholder="Username"> 
+<br>
+<input type="password" name="Password" placeholder="Password"> 
+<br>
+<input type="email" name="email" id="email">
+<h2>Enter date for event</h2>
+<input type="datetime-local" name="date" id="date">
+<script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    if (body.classList.contains('dark-mode')) {
+        toggle.innerHTML = '<img src="moon.png" alt="Moon">';
+    
+      } 
+      toggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode'))
+        { toggle.innerHTML = '<img src="moon.png" alt="Moon">';
+
+      } else {
+        toggle.innerHTML = '<img src="sun.png" alt="Sun">';
+      }
+    });
+</script>
+    </body>
+</html>

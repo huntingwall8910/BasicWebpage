@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cool Stuff</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="left">
+            <a class="links" href="index.html">Home</a>
+            <a class="links" href="about.html">About</a>
+            <a class="links" href="pancake.html">Pancakes</a>
+            <a class="current links" href="coolStuff.html">Cool Stuff</a>
+            
+    
+        </div>
+        <div class="right">
+            <a class="links" href="signup.html">Sign Up</a>
+            <button id="dark-mode-toggle" class="dark-mode-toggle"><img src="sun.png" alt="Sun"></button>
+
+        </div>
+    </nav>
+    <h3>Color picker:</h3>
+<input type="color" name="color" id="color">
+<h3>Cool Slider</h3>
+<div class="blocky">
+
+<input type="range" name="slider" id="slider">
+<input type="checkbox" name="" id="">
+<input type="number" name="" id="">
+<input type="month" name="" id="">
+<input type="search" name="search" id="">
+<input type="url" name="url" id="url">
+<input type="week" name="week" id="week">
+<input type="submit" value="hi">
+<input type="button" value="hello">
+<input type="tel" name="" id="">
+</div>
+
+<script>
+    const toggle = document.getElementById('dark-mode-toggle');
+    const body = document.body;
+    if (body.classList.contains('dark-mode')) {
+        toggle.innerHTML = '<img src="moon.png" alt="Moon">';
+    
+      } 
+      toggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode'))
+        { toggle.innerHTML = '<img src="moon.png" alt="Moon">';
+
+      } else {
+        toggle.innerHTML = '<img src="sun.png" alt="Sun">';
+      }
+    });
+</script>
+</body>
+</html>
