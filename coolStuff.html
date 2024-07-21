@@ -3,23 +3,10 @@
 <head>
     <title>Cool Stuff</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <nav>
-        <div class="left">
-            <a class="links" href="index.html">Home</a>
-            <a class="links" href="about.html">About</a>
-            <a class="links" href="pancake.html">Pancakes</a>
-            <a class="current links" href="coolStuff.html">Cool Stuff</a>
-            
-    
-        </div>
-        <div class="right">
-            <a class="links" href="signup.html">Sign Up</a>
-            <button id="dark-mode-toggle" class="dark-mode-toggle"><img src="sun.png" alt="Sun"></button>
-
-        </div>
-    </nav>
+    <nav id="snippet-container"></nav>
     <h3>Color picker:</h3>
 <input type="color" name="color" id="color">
 <h3>Cool Slider</h3>
@@ -36,23 +23,5 @@
 <input type="button" value="hello">
 <input type="tel" name="" id="">
 </div>
-
-<script>
-    const toggle = document.getElementById('dark-mode-toggle');
-    const body = document.body;
-    if (body.classList.contains('dark-mode')) {
-        toggle.innerHTML = '<img src="moon.png" alt="Moon">';
-    
-      } 
-      toggle.addEventListener('click', () => {
-        body.classList.toggle('dark-mode');
-        if (body.classList.contains('dark-mode'))
-        { toggle.innerHTML = '<img src="moon.png" alt="Moon">';
-
-      } else {
-        toggle.innerHTML = '<img src="sun.png" alt="Sun">';
-      }
-    });
-</script>
 </body>
 </html>

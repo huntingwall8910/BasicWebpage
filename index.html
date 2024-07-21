@@ -4,44 +4,12 @@
 <head>
     <title>Welcome to my first website!!!!!</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
 </head>
 <body >
-    <nav>
-        <div class="left">
-            <a class="current links" href="index.html">Home</a>
-            <a class="links" href="about.html">About</a>
-            <a class="links" href="pancake.html">Pancakes</a>
-            <a class="links" href="coolStuff.html">Cool Stuff</a>
-             
-
-        </div>
-        <div class="right">
-            <a class="links" href="signup.html">Sign Up</a>
-            <button id="dark-mode-toggle" class="dark-mode-toggle"><img src="sun.png" alt="Sun"></button>
-
-        </div>
-
-
-    </nav>
+    <nav id="snippet-container"></nav>
     <h1>This is my first website!</h1>
     <p>Welcome to my brand new website with a lot of cool text!</p>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut maiores nemo porro vel error soluta similique voluptas illo velit explicabo quisquam possimus necessitatibus saepe aut labore cupiditate, repellendus ratione. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim cumque illum aperiam exercitationem optio placeat quas voluptate qui, rem, perferendis perspiciatis deserunt adipisci doloremque! Nisi ullam iure minima voluptatibus suscipit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto at voluptates debitis aut, ratione corporis, eos illo quisquam nisi soluta autem. Fuga esse ipsam earum facilis voluptatem, totam fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere necessitatibus, quibusdam voluptatibus autem in quasi rem repellendus praesentium dicta eaque quam numquam tempora accusamus sint debitis corrupti, ea sed nemo. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam adipisci reiciendis sapiente, quo quam repellat at commodi, corporis iste eius tempora repellendus dignissimos voluptas rerum modi sit? Excepturi, voluptate corrupti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, est at. Pariatur optio voluptatem, tenetur animi excepturi nemo. Vel, cupiditate ea. Impedit ullam ratione beatae iure quam aperiam veniam quis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam beatae vitae itaque tempore neque omnis. Ad amet rerum sapiente qui ducimus, repudiandae necessitatibus libero similique, eos nihil animi molestias dignissimos?</p>
-    <script>
-        const toggle = document.getElementById('dark-mode-toggle');
-        const body = document.body;
-        if (body.classList.contains('dark-mode')) {
-            toggle.innerHTML = '<img src="moon.png" alt="Moon">';
-        
-          } 
-          toggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            if (body.classList.contains('dark-mode'))
-            { toggle.innerHTML = '<img src="moon.png" alt="Moon">';
-
-          } else {
-            toggle.innerHTML = '<img src="sun.png" alt="Sun">';
-          }
-        });
-    </script>
 </body>
 </html>

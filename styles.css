@@ -48,7 +48,7 @@ nav {
 .dark-mode-toggle {
     background: none;
     border: none;
-
+    transition: all ease-in-out 0.5s;
 }
 .dark-mode-toggle img {
     height: 30px;
